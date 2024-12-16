@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AppMéteo</title>
+</head>
+<body class="flex flex-col justify-between h-dvh">
+    <header class="grid grid-cols-3 border-b-2 border-black">
+        <div class="flex items-center pl-10">
+            <img class="w-32 min-[360px]:hidden lg:block" src="./src/imgs/nuage.png" alt="image d'un nuage">
+            <h1 class="p-5 text-xl font-medium lg:block min-[360px]:hidden">weather.io</h1>
+        </div>
+        <div class="h-full flex items-center justify-center">
+            <select class="
+                cursor-pointer 
+                border-2 
+                border-black 
+                rounded-md 
+                p-2 
+                text-lg 
+                transition duration-3 
+                hover:border-red-500
+                min-[360px]:my-8"
+                name="country" id="selectCountry">
+                    <option value="">Selectionner une ville</option>
+            </select>
+        </div>
+    </header>
+    <main class="bg-slate-100 flex justify-center items-center flex-1">
+        <div id="divInfo" class="bg-white border rounded shadow">
+
+        </div>
+    </main>
+    <footer class="bg-black text-center">
+        <p class="text-white py-8 text-sm">Arnaud DEFRANCQ - Création</p>
+    </footer>
+</body>
+<script type="module" src="./src/index.js"></script>
+</html>

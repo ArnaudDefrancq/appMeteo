@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'text';
+        src: url(./src/asset/font/Roboto-Regular.ttf);
+    };
+    
+    @font-face {
+        font-family: 'title';
+        src: url(./src/asset/font/Merriweather-Regular.ttf);
+    };
+}
+
+* {
+    font-family: 'text';
+}
+h1, h2, h3, h4 {
+    font-family: 'title';
+}
